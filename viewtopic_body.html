@@ -1,0 +1,287 @@
+<script type="text/javascript">
+//<![CDATA[
+var multiquote_img_off = '{JS_MULTIQUOTE_IMG_OFF}', multiquote_img_on = '{JS_MULTIQUOTE_IMG_ON}', _atr = '{JS_DIR}addthis/', _ati = '{PATH_IMG_FA}addthis/'{ADDTHIS_LANG}, addthis_localize = { share_caption: "{L_SHARE_CAPTION}", email: "{L_EMAIL}", email_caption: "{L_EMAIL_CAPTION}", favorites: "{L_SHARE_BOOKMARKS}", print: "{L_PRINT}", more: "{L_MORE}" };
+$(function(){
+    if(typeof(_atc) == "undefined") {
+        _atc = {  };
+    }
+});
+
+var hiddenMsgLabel = { visible:'{JS_HIDE_HIDDEN_MESSAGE}', hidden:'{JS_SHOW_HIDDEN_MESSAGE}' };
+showHiddenMessage = function(id)
+{
+    try
+    {
+        var regId = parseInt(id, 10);
+        if( isNaN(regId) ) { regId = 0; }
+        
+        if( regId > 0)
+        {
+            $('.post--' + id).toggle(0, function()
+			{
+				if( $(this).is(":visible") )
+				{
+					$('#hidden-title--' + id).html(hiddenMsgLabel.visible);
+				}
+				else
+				{
+					$('#hidden-title--' + id).html(hiddenMsgLabel.hidden);
+				}
+			});
+        }
+    }
+    catch(e) { }
+    
+	return false;
+};
+
+//]]>
+</script>
+
+<div class="top_head"></div>
+<div class="continut2" style="padding-left: 20px">
+  <li class="begin">
+    <a href="/" class="first-link"><span>Mihai Beta Zone</span></a>
+  </li>
+  {NAV_CAT_DESC}
+</div>
+<div class="bottom_head"></div>
+
+<!-- BEGIN topicpagination -->
+<div class="pagination topic-options">
+	{PAGINATION}
+</div>
+<!-- END topicpagination -->
+
+<div class="posting-options topic-options">
+	<ul class="posting-buttons clearfix">
+		<!-- BEGIN switch_user_authpost -->
+			<li class="post-icon"><a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow"><img src="{POST_IMG}" class="{POST_IMG_ID}" alt="{L_POST_NEW_TOPIC}" /></a></li>
+		<!-- END switch_user_authpost -->
+		<!-- BEGIN switch_user_authreply -->
+			<li class="post-icon"><a href="{U_POST_REPLY_TOPIC}"><img src="{REPLY_IMG}" class="i_reply" alt="{L_POST_REPLY_TOPIC}" /></a></li>
+		<!-- END switch_user_authreply -->
+		<!-- BEGIN switch_fb_likebtn -->
+		<li class="post-icon">
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "https://connect.facebook.net/{LANGUAGE}/all.js#xfbml=1";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>	
+			<div class="fb-like" data-href="{FORUM_URL}{TOPIC_URL}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" style="top:5px"></div>
+		</li>	
+		<!-- END switch_fb_likebtn -->
+		
+		<!-- BEGIN switch_twitter_btn -->
+		<li class="post-icon" style="padding-top:5px">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="{TWITTER}">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </li>
+		<!-- END switch_twitter_btn -->
+	</ul>
+</div>
+
+<div class="clearfix empty-clear"></div>
+
+<div class="borderwrap">
+	<div class="maintitle" style="position: relative;right: 0px;top: 0px;font-size: 12px!important;font-family: tahoma;font-weight: 500!important;text-align: left!important;line-height: 10px!important;">
+        <span style="position: relative;right: 0px;top: 10px;">Chat topic</span>
+        </div>
+	{POLL_DISPLAY}
+
+	<!-- BEGIN postrow -->
+	
+	<!-- BEGIN hidden -->
+	<div class="postdetails {postrow.hidden.ROW_CLASS}" colspan="2" align="center">{postrow.hidden.MESSAGE}</div>
+	<!-- END hidden -->
+	
+	<!-- BEGIN first_post_br -->
+</div>
+<hr id="first-post-br" />
+<div class="borderwrap">
+	<!-- END first_post_br -->
+	
+	<!-- BEGIN displayed -->
+	 <table cellpadding="0" cellspacing="0" id="" class="ipbtable index-box" style="padding-top: 10px;">
+        <thead style="line-height: 30px!important;">
+            <tr>
+                <td width="210px" align="center" valign="center" height="28px" style="min-height: 28px;height: 28px"><span class="name"> <span style="color:#8C8C8C">
+                    <strong>{postrow.displayed.POSTER_NAME}</strong>
+                    </span> 
+                    </span>
+                    </td>
+                <td class="topics" align="right" valign="center" height="28px" style="min-height: 28px;height: 28px">
+                     <span class="user_area"><span style="color:#536482;" class="status_row_"></span> 
+                     <span class="on">Online</span>
+                     <span class="off">Offline</span>
+                     </span>
+                     </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="avatar_info" align="left" valign="top" width="210px" style="padding-left: 20px">
+                  <div class="begin_avatar_top"> <span class="membru">Rank:<b> Membru</b></span><br/> </div>
+                    <div class="content_avatar">
+                        <center>	{postrow.displayed.POSTER_AVATAR}</center>
+                        <div class="detalii">
+                            <dd>
+                                	<!-- BEGIN profile_field -->
+                              <div class="ll">{postrow.displayed.profile_field.LABEL}{postrow.displayed.profile_field.CONTENT}{postrow.displayed.profile_field.SEPARATOR}</div>
+							<!-- END profile_field -->
+							{postrow.displayed.POSTER_RPG}
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="bottom_avatar"></div>
+                </td>
+                <td class="postbody_content" align="left" valign="top" style="vertical-align: top!important;">
+                    <div class="post-entry">
+                        <div>{postrow.displayed.MESSAGE}</div>
+                        <div class="clear"></div>
+                    </div>
+                  <br/><br/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  <div class="tfoot2">
+    <ul class="posting-icons" style="padding-left: 20px">
+				<li>{postrow.displayed.THANK_IMG}</li>
+				<li>{postrow.displayed.MULTIQUOTE_IMG}</li>
+				<li>{postrow.displayed.QUOTE_IMG}</li>
+				<li>{postrow.displayed.EDIT_IMG}</li>
+				<li>{postrow.displayed.DELETE_IMG}</li>
+			</ul>
+		</div>
+	</div> <!-- closing tag post -->
+	<!-- END displayed -->
+	<!-- END postrow -->
+	<div class="topic-footer clearfix">
+		<!-- BEGIN minisearch -->
+		<div class="search-footer-box">
+			<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
+				<fieldset>
+					<input type="text" name="search_keywords" id="search_keywords" size="20" value="{L_SEARCH}" onclick="if (this.value == '{L_SEARCH}') this.value = '';" onblur="if (this.value == '') this.value = '{L_SEARCH}';" />
+					&nbsp;<input class="button" type="submit" value="{L_SEARCH}" />
+					<input type="hidden" value="{SEARCH_WHERE}" name="search_where" />
+					<input type="hidden" value="{SEARCH_TOPIC}" name="search_topic" />
+					<input type="hidden" value="posts" name="show_results" />
+				</fieldset>
+			</form>
+		</div>
+		<!-- END minisearch -->
+        <!-- BEGIN switch_isconnect -->
+		<div class="next-prev">
+			&laquo; <a href="{U_VIEW_OLDER_TOPIC}">{L_IPB_PREVIOUS_TOPIC}</a> &middot; <a href="{U_VIEW_NEWER_TOPIC}">{L_IPB_NEXT_TOPIC}</a> &raquo;
+		</div>
+        <!-- END switch_isconnect -->
+	</div>
+</div>
+
+<!-- BEGIN viewtopic_bottom -->
+<br />
+<div class="borderwrap">
+	<div class="bar clearfix">
+		<div class="left rtl-inversion-left">
+			<input type="hidden" name="t" value="{TOPIC_ID}" />
+
+			<!-- <input type="hidden" name="sid" value="{S_SID}" /> -->
+			<input type="hidden" name="{SECURE_ID_NAME}" value="{SECURE_ID_VALUE}" />
+
+			{S_TOPIC_ADMIN}
+		</div>
+		<div class="right rtl-inversion-right">
+			{L_TABS_PERMISSIONS} <br />{S_AUTH_LIST}
+		</div>
+	</div>
+</div>
+<!-- END viewtopic_bottom -->
+
+<!-- BEGIN topicpagination -->
+<div class="pagination topic-options">
+	{PAGINATION}
+</div>
+<!-- END topicpagination -->
+
+<div class="posting-options topic-options">
+	<ul class="posting-buttons clearfix">
+		<!-- BEGIN switch_user_authpost -->
+		<li class="post-icon">
+			<a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow"><img src="{POST_IMG}" class="{POST_IMG_ID}" alt="{L_POST_NEW_TOPIC}" /></a>
+		</li>
+		<!-- END switch_user_authpost -->
+		<!-- BEGIN switch_user_authreply -->
+		<li class="post-icon">
+			<a href="{U_POST_REPLY_TOPIC}"><img src="{REPLY_IMG}" class="i_reply" alt="{L_POST_REPLY_TOPIC}" /></a>
+		</li>
+		<!-- END switch_user_authreply -->
+	</ul>
+</div>
+
+<div class="clearfix empty-clear"></div>
+
+<!-- BEGIN promot_trafic -->
+<div class="row2">
+	<div id="ptrafic_close" class="clearfix" style="display:none">
+		<div class="maintitle floated">
+			<h3>{PROMOT_TRAFIC_TITLE}</h3>
+			<div class="right rtl-inversion-right">
+				<a href="javascript:ShowHideLayer('ptrafic_open','ptrafic_close');"><img src="{TABS_MORE_IMG}" alt="+" align="" border="0" /></a>
+			</div>
+		</div>
+	</div>
+	<div id="ptrafic_open" class="clearfix" style="display:''">
+		<div class="maintitle floated">
+			<h3>{PROMOT_TRAFIC_TITLE}</h3>
+			<div class="right rtl-inversion-right">
+				<a href="javascript:ShowHideLayer('ptrafic_open','ptrafic_close');"><img src="{TABS_LESS_IMG}" alt="-" align="" border="0" /></a>
+			</div>
+		</div>
+		<div>
+			<!-- BEGIN link -->
+			&raquo;&nbsp;<a href="{promot_trafic.link.U_HREF}" target="_blank" title="{promot_trafic.link.TITLE}" rel="nofollow">{promot_trafic.link.TITLE}</a><br />
+			<!-- END link -->
+		</div>
+	</div>
+</div>
+<!-- END promot_trafic -->
+
+<!-- BEGIN switch_forum_rules -->
+<div class="row1" id="forum_rules">
+	<div class="maintitle">
+		<h3>{L_FORUM_RULES}</h3>
+	</div>
+	<table>
+		<tr>
+			<!-- BEGIN switch_forum_rule_image -->
+			<td class="logo">
+				<img src="{RULE_IMG_URL}" alt=""/>
+			</td>
+			<!-- END switch_forum_rule_image -->
+			<td class="rules post-entry">
+				{RULE_MSG}
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- END switch_forum_rules -->
+
+<!-- BEGIN switch_user_logged_in -->
+<br />
+<a name="quickreply"></a>
+{QUICK_REPLY_FORM}
+<!-- END switch_user_logged_in -->
+
+<!-- BEGIN switch_image_resize -->
+<script type="text/javascript">
+//<![CDATA[
+$(resize_images({ 'selector' : '.postbody .post-entry', 'max_width' : {switch_image_resize.IMG_RESIZE_WIDTH}, 'max_height' : {switch_image_resize.IMG_RESIZE_HEIGHT} }));
+//]]>
+</script>
+<!-- END switch_image_resize -->
+
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=forumotion" type="text/javascript"></script>
