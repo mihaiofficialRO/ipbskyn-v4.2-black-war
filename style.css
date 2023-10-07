@@ -1,0 +1,1356 @@
+.left {
+    float: right;
+    text-align: left;
+}
+.content_avatar img {
+ width: 180px;
+}
+div.newslink {
+    padding: 0px;
+}
+a[href="/viewonline"], table.ipbtable {
+    color: #fff;
+}
+body { 
+    color: #fff;
+}
+.borderwrapm, div.borderwrap {
+    background-color: initial;
+    border: 1px solid #191919;
+    padding: 1px;
+}
+div#logostrip {
+background-color: initial !important;
+}
+#navstrip li a{
+    line-height: 29px!important;
+    display: inline-block;
+}
+.ipbform2 dl{
+    border: none;
+}
+.ipbform2 dl dt label{
+    position: relative;
+    left:20px;
+ 
+}
+.ipbform2 dl dd label{
+    position: relative;
+    left:20px;
+ 
+}
+.postreview .box-content {
+   background-color: #313131;
+   border-left: 1px inset #404040;
+   border-right: solid 1px #121212;
+   }
+#content-container div#right {
+    display: none;
+}
+#userlinks{
+    display: none;
+}
+.legend{
+    font-size: 0px;
+}
+.legend a{
+    font-size: 12px;;
+    padding: 2px 4px;
+    border-radius:3px;
+    margin: 0px 2px;
+}
+/* fieldset {
+   clear: both;
+   background-color: #ff9000;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/profil16.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+/***************** LOGO ************/
+div#logostrip {
+   min-height: 88px;
+   background-image: url('');
+   background-repeat: repeat-x;
+   text-align: center;
+   width: 100%;
+   margin-left: 0px;
+   }
+div#logostrip #logo {
+   display: block;
+   margin: 0 0px;
+   float: center;
+   }
+body {
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/body11.gif');
+  margin-left: 5px;
+  font-size: 12px;
+  font-family: tahoma;
+   }
+#main {
+    width: 95%;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    margin: 0px center;
+    margin-top: 30px;
+    margin-left: -2px;
+    background-width: 768px;
+    min-width: 983px !important;
+    max-width: 984px !important;
+}
+#ipbwrapper {
+    width: 61.8%;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+     margin-left: 15px;
+    margin-left: 17px;
+    margin: 0px auto;
+    margin-top: 30px;
+    min-width: 1042px;
+    padding-right: 2px;
+    background-width: auto;
+    background-width: 768px;
+    background-repeat: repeat-y;
+    background-position: middle top;
+    background-color: transparent !important;
+    background-image: url(https://i.servimg.com/u/f72/12/12/58/19/backg310.png);
+}
+.container_IE {
+    min-width: 900px !important;
+    padding-left: 0.40em !important;
+     margin-right: 2.90em !important;
+    padding-bottom: 3.0em !important;
+    image-repeat: no-repeat !important;
+    background-position: bottom!important;
+    background-repeat: no-repeat !important;
+    background: transparent url(https://i.servimg.com/u/f72/12/12/58/19/backg18.png);
+    background: transparent url(https://i.servimg.com/u/f72/12/12/58/19/backg18.png);
+}
+/***** TABLE BABY ************/
+table.ipbtable.index-box {
+    width: 100%;
+    table-layout: fixed;
+}
+table.ipbtable th {
+   color: #FFE1B9;
+   font-size: 12px;
+   font-weight: bold;
+   background-image: url('https://2img.net/r/ihimizer/img682/9953/ua2.png');
+   white-space: nowrap;
+   padding: 0 5px;
+   text-align: center;
+   border-left: solid 1px #363636;
+   border-right: solid 1px #363636;
+   border-top: solid 1px #363636;
+   border-bottom: solid 1px #363636;
+}
+table.ipbtable th.formsubtitle{
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+div.maintitle {
+   background-image: url('https://2img.net/r/ihimizer/img185/9360/87720941.png');
+   background-repeat: no-repeat;
+   font-family: Verdana, "Trebuchet MS", "Lucida Grande", Helvetica, Arial;
+   white-space: nowrap;
+   text-align: center;
+   font-size: 12px;
+   font-weight: bold;
+   color: #ffffff;
+   color: #EB8500;
+   }
+/********************* TABLE BOTTOM ****************/
+
+/*IPB Tables*/
+table.ipbtable th.formsubtitle,.formsubtitle {
+   background-color: none!important;
+   }
+table.ipbtable tfoot td {
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cathea11.gif');
+   height: 24px;
+   padding: 0 3px;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+table.ipbtable .forumdesc {
+   color: #666666;
+   }
+.row1,.row2 {
+   border-bottom: 1px solid #131313 !important;
+   }
+.row1 {
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+.row2 {
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+.darkrow {
+  background-color: #ff9000;
+  background-image: url('https://i.servimg.com/u/f72/12/12/58/19/profil16.gif');       
+  background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   display: none;
+   }
+.thin {
+border: none!important;
+   }
+.sticky-separator {
+   border-top: 3px solid #ff9000;
+   }
+/********************* PORTAL & WIDGET *********************************/
+.module .maintitle {
+  background-image: url('https://i.servimg.com/u/f72/12/12/58/19/portal12.png') !important;
+  background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-bottom: solid 1px #131313;
+   }
+.module .maintitle h3 {
+   float: none !important;
+   font-size: 1em !important;
+   }
+.module .box-content {
+   padding: 5px;
+   line-height: normal;
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+.module .postbody {
+   padding: 0px !important;
+   width: 99.6%;
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-bottom: solid 1px #131313;
+   }
+.module .postbody .postbody-head {
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;*/
+   border-bottom: solid 1px #131313;
+   }
+.module .postbody .post-footer {
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/bg_cat10.gif') !important;
+   background-color: #313131;   
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+/***************** POPUP MENU*************************/
+
+.popmenubutton {
+   float: right;
+margin-right: 20px;
+   height: 15px;
+margin-bottom: -3.5px !important;
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+#forummenu-options {
+   float: right;
+   height: 15px;
+   margin-bottom: -4px !important;
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   display: none;
+}
+#forummenu-options_menu.popupmenu  {
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;}
+
+div.maintitle h2,div.maintitle h3,div.maintitle div.toggle {
+margin-bottom: -5.5px;
+   font-size: 13px;
+   }
+/********* MENU BAR*****************************/
+#submenu {
+background-image: url('https://2img.net/r/ihimizer/img717/282/ua1.png');
+   height: 35px;
+   overflow: hidden;
+   border-left: solid 1px #121212;
+   border-bottom: solid 1px #000;
+   border-top: solid 1px #000;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 12px;
+   padding: 4.5px;
+   width: 98.6%;
+   margin-left: -6px;
+   }
+#submenu {
+   padding: 0.3em 0 0.0em;
+   text-align: center;
+   color: #FFFFFF;
+   }
+#submenu {
+background-image: url('https://i.servimg.com/u/f72/12/12/58/19/button20.gif');
+   height: 18px;
+   overflow: hidden;
+   border-bottom: solid 1px #000;
+   border-top: solid 1px #000;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 12px;
+   padding: 4px;
+   width: 98.6%;
+   margin-left: -4px;
+   }
+#submenu {
+   height: 18px;
+   padding: 0.0em 0 0.0em;
+   text-align: center;
+    color: #FFFFFF;
+margin-left: -4px;
+   }
+#submenu ul {
+   list-style: none;
+   text-align: left;
+   }
+#submenu ul li {
+  line-height: 2em;
+}
+#submenu ul li a {
+   padding: 0.0em 0em 0.0em 0;
+   padding: 0.5em 1em 0.65em 0;
+   margin: 0.5em 1em 0.65em 0;
+   text-decoration: bold;
+   color: #FFFFFF;
+   margin-left: 15px;
+   }
+#submenu ul li a {
+   display: inline-block;
+   }
+#submenu ul li a img {
+   display: none;
+}
+/*********  BAR FOR LOG AS************/
+#userlinks {
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/login10.png');
+   padding: 0.5em;
+   font-size: 0.9em;
+   background-color: #313131; /** table color**/
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #121212;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   width: 97.6%;
+   margin-left: -6px;
+   }
+/*********************** REMOVE UNDERLINE ************************/
+a:link{
+color: #107fe6;
+text-decoration: none;
+}
+a:hover{
+text-decoration: underline;
+}
+a:active{
+text-decoration: none;
+}
+a:visited{
+color:#dedede;
+text-decoration: none;
+}
+/******************* - + images ************************/
+div.maintitle .expand,div.maintitle .contract {
+   float: right;
+   margin-right: 15px;
+   width: 11px;
+   height: 11px;
+   background: url('https://i.servimg.com/u/f72/12/12/58/19/min110.png') no-repeat 50% 50%;
+   cursor: pointer;
+   }
+div.maintitle .expand {
+   background: url('https://i.servimg.com/u/f72/12/12/58/19/max110.png') no-repeat 50% 50%;
+   }
+/*********************** NAV BAGI TOPIC ************************/
+#navstrip {
+    list-style: none;
+    margin: 0 0 1.2em;
+    font-weight: bold;
+    height: -20px;
+    background-color: #313131;
+    background-image: url(https://i.servimg.com/u/f72/12/12/58/19/cell10.gif);
+    background-repeat: repeat-x;
+    border-left: solid 1px #404040;
+    border-right: solid 1px #121212;
+    border-top: solid 1px #3C3C3C;
+    border-bottom: solid 1px #131313;
+}
+#navstrip li {
+   float: left;
+   margin: 0 5px;
+   padding-left: 15px;
+   background: url('https://i.servimg.com/u/f72/12/12/58/19/arrow15.png') no-repeat left 50%;
+   }
+#navstrip li.begin {
+   padding-left: 5px;
+        background: url('https://2img.net/i/fa/empty.gif') no-repeat left 50%;
+   }
+#navstrip li a {
+   text-decoration: none;
+   font-weight: bold;
+   }
+/************************SEARCH BOX*************************/
+.search-footer-box input {
+   margin: 0;
+   font-size: 0.8em;
+   background-color: #313131;
+   color: #FFFFFF;       
+   border-left: solid 1px #ff9000;
+   border-right: solid 1px #ff9000;
+   border-top: solid 1px #ff9000;
+   border-bottom: solid 1px #ff9000;
+   display: none;
+   }
+.mod-forum-toolbox {
+   float: right;
+   width: 45%;
+   text-align: right;
+   }
+/**********************Login form****************/
+div.login fieldset label {
+   float: left;
+   width: 11em;
+   margin: 0.5em 0;
+   }
+div.login fieldset input {
+   margin: 0.5em 0;
+   }
+div.login fieldset.formcolumn2 label {
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   display: inline;
+   float: none;
+   }
+/* ******************************************** QOUTE & CODE ************************ */
+blockquote {
+   color: #FFFFFF;
+   margin: 8px;
+   padding: 8px;
+   background-color: #313131;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+blockquote cite {
+   background-color: #313131;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   color: #FFFFFF;
+   display: block;
+   margin: -8px -8px 8px -8px;
+   padding: 3px;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/quote10.png');
+   background-repeat: no-repeat;
+   background-position: top right;
+   font-style: normal;
+   font-size: 11px;
+   font-weight: bold;
+   }
+.codebox dt {
+   background-color: #313131;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+.codebox dd {
+   background-color: #313131;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+}
+dl.codebox {
+   margin: 8px;
+   }
+.codebox dt {
+   background-color: #313131;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   display: block;
+   padding: 3px;
+   background-image: url('');
+   background-repeat: no-repeat;
+   background-position: top right;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   font-weight: normal;
+   font-weight: bold;
+   }
+.spoiler {
+   margin: 8px;
+   padding: 8px;
+   background-color: #313131;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+/* ************************ POST BODY ************************ */
+
+.post {
+background-color: #191919;
+margin: 10px 0px;
+   }
+.post-container {
+   margin-left: 18em;
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+.post-header{
+   padding: 2px 8px 0;
+   min-height: 33px;
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+.popmenubutton-new-out {
+   margin: 0 auto;
+   float: none;
+   padding: 0.3em 0;
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   }
+.postprofile {
+   float: left;
+   margin-left: -18em;
+   width: 17.757em;
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313; 
+   height: auto; 
+   }
+.topic-footer {
+   background-color: #191919;
+   padding: 0px;
+   font-weight: bold;
+   height: 18px;
+   }
+.bar {
+   padding: 5px;
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/cell10.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+   display:none;
+   }
+.post-footer {
+   clear: both;
+   background-color: #313131;
+   background-image: url('https://i.servimg.com/u/f72/12/12/58/19/profil16.gif');       
+   background-repeat: repeat-x;
+   border-left: solid 1px #404040;
+   border-right: solid 1px #121212;
+   border-top: solid 1px #3C3C3C;
+   border-bottom: solid 1px #131313;
+}
+.current-time {
+   float: right;
+   color: #FFFFFF;   
+}
+div.maintitle {
+    background-color: none!important;
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/98110.png);
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/mainti13.png);
+    background-repeat: no-repeat;;
+    color: #fff;
+    padding: 8px 8px 8px 15px;
+    line-height: 32px;
+    vertical-align: middle;
+    font-family: Verdana, "Trebuchet MS", "Lucida Grande", Helvetica, Arial;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+table.ipbtable.index-box, table.ipbtable{
+  background-image: url(https://i.servimg.com/u/f62/17/29/75/16/conten12.png);
+  background-repeat: repeat-y!important;
+  background-width: 100%;
+}
+table.ipbtable.index-box td, table.ipbtable.index-box th, table.ipbtable th, table.ipbtable td{
+  background: none!important;
+  border: none!important;
+}
+table.ipbtable.index-box th.forum{
+  padding-left: 20px;
+  line-height: 42px;
+}
+th.forum span{
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  }
+thead{
+  background-image: url(https://i.servimg.com/u/f62/17/29/75/16/th10.png)!important;
+  background-repeat: no-repeat;
+  line-height: 42px;
+  background-color: none!important;
+}
+.tfoot{
+  background-image: url(https://i.servimg.com/u/f62/17/29/75/16/tfoot310.png);
+  background-repeat: no-repeat;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  background-position: bottom center;
+}
+table.ipbtable th{
+  line-height: 40px;
+}
+table.ipbtable th.formsubtitle{
+  background-image: url(https://i.servimg.com/u/f62/17/29/75/16/th10.png)!important;
+  background-repeat: no-repeat;
+  line-height: 40px;
+  background-size: cover;
+}
+table.ipbtable td.row1, table.ipbtable td.row2.centered{
+width: 60px;
+  text-align: center;
+  vertical-align: middle!important;
+}
+table.ipbtable th .linklist ul li a{
+  margin-right: 16px;
+}
+table.ipbtable img.icon{
+  position: relative;
+  width: 56px;
+  right: 14px;
+}
+#submenu{
+  background-image: url(https://i.servimg.com/u/f62/17/29/75/16/bgmeni11.png);
+  background-repeat: no-repeat;
+  background-color: #222222;
+  background-size: cover;
+  background: none!important;
+}
+a.mainmenu:hover{
+  color: #fff;
+}
+a.mainmenu img{
+  display: none!important;
+}
+.menu a{
+  display: inline-block;
+  line-height: 40px;
+text-transform: uppercase;
+  font-family: sans-serif;
+  color: #bbb;
+  font-weight: 600;
+  font-size: 12px;
+  min-width: 80px;
+  text-align: center!important;
+  background-image: url(https://i.servimg.com/u/f20/17/29/75/16/blackc10.png)!important;
+  background-image: url(https://i.servimg.com/u/f20/17/29/75/16/menula10.png)!important;
+  background-position: center center;
+  z-index: 999;
+  text-decoration: none!important;
+  margin: 4px;
+}
+ul.privmsg li div.tabitem a{
+  padding: none!important;
+  color: #bbb;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center!important;
+  background: #333!important;
+  border-radius: 3px;
+}
+.menu a::before{
+  content: url(https://i.servimg.com/u/f20/17/29/75/16/black110.png);
+  float: left;
+  position: relative;
+  right: 4px;
+}
+.menu a::after{
+  content: url(https://i.servimg.com/u/f20/17/29/75/16/black210.png);
+  float: right;
+  position: relative;
+  left: 2px;
+}
+.menu a:hover{
+  background-image: url(https://i.servimg.com/u/f20/17/29/75/16/final10.png)!important;
+  background-position: center center;
+  background-repeat: repeat-x;
+}
+.menu a:hover:after{
+    content: url(https://i.servimg.com/u/f20/17/29/75/16/511.png)!important;
+}
+.menu a:hover:before{
+    content: url(https://i.servimg.com/u/f20/17/29/75/16/411.png)!important;
+}
+.menu {
+    margin-left: 150px!important;
+}
+div.maintitle .contract {
+   float: right;
+   margin-right: 15px;
+   width: 40px;
+   height: 24px;
+   background: url(https://i.servimg.com/u/f62/17/29/75/16/expand10.png) no-repeat 50% 50%;
+   cursor: pointer;
+   position: relative;
+   top: 10px;
+   right: 4px;
+}
+div.maintitle .expand{
+    float: right;
+   margin-right: 15px;
+   width: 40px;
+   height: 24px;
+   background: url(https://i.servimg.com/u/f62/17/29/75/16/contra10.png) no-repeat 50% 50%;
+   cursor: pointer;
+   position: relative;
+   top: 10px;
+   right: 4px;
+}
+#gfooter{
+   background-image: url(https://i.servimg.com/u/f62/17/29/75/16/conten14.png)!important;
+   background-repeat: repeat-x;
+   line-height: 40px;
+   background-color: #242424!important;
+   background: none!important;
+   text-align: center!important;
+   width: 90%!important;
+   margin: 0px auto!important;
+}
+div.centerer{
+  background-image: url(https://i.servimg.com/u/f62/17/29/75/16/conten14.png)!important;
+  background-repeat: repeat-x;
+  line-height: -40px;
+  display: block;
+  width: 100%!important;
+  margin: 0px auto!important;
+}
+div.centerer:before{
+  content: url(https://i.servimg.com/u/f62/17/29/75/16/before15.png);
+  float: left;
+  position: relative;
+  right: 4px;
+}
+div.centerer:after{
+  content: url(https://i.servimg.com/u/f62/17/29/75/16/after212.png);
+  float: right;
+  position: relative;
+  left: 2px;
+}
+#gfooter form, #gfooter .current-time{
+  display: none!important;
+}
+span.topics, span.posts{
+  display: inline-block;
+  line-height: 38px;
+  width: 60px;
+  text-align: center;
+  background-image: url(https://i.servimg.com/u/f62/17/29/75/16/subiec11.png);
+  background-repeat: no-repeat!important;
+  background-position: center center;
+}
+
+.activeusers {
+    background: none!important;
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    margin: 0px auto!important;
+    border: none!important;
+}
+.activeusers img{
+  width: 34px;
+
+}
+td.row1_franta img{
+  width: 56px;
+  position: relative;
+  left: 6px;
+}
+.ul-icons-home li{
+  position: relative;
+  bottom: 8px;
+  margin: 0px 6px;
+}
+.post{
+  background-image: url(https://i.servimg.com/u/f62/17/29/75/16/conten12.png);
+  background-repeat: repeat-y!important;
+  background-width: 100%;
+  padding: 0px 20px;
+}
+.begin_avatar_top{
+  background-image: url(https://i.servimg.com/u/f62/17/29/75/16/casq10.png);
+    display: inline-block;
+  width: 200px;
+  padding: 10px 0px;
+  text-align: center;
+  margin: 0px auto!important;
+    background-repeat: no-repeat!important;
+}
+.content_avatar{
+  background-image: url(https://i.servimg.com/u/f62/17/29/75/16/cont10.png);
+  background-repeat: repeat-y;
+  display: inline-block;
+  width: 200px;
+  margin: 0px auto!important;
+}
+.bottom_avatar{
+  background-image: url(https://i.servimg.com/u/f62/17/29/75/16/bot10.png);
+  display: inline-block;
+  height: 20px;
+  width: 200px;
+  position: relative;
+  margin: 0px auto!important;
+  background-position: bottom center;
+}
+.detalii .ll{
+ display: block;
+  width: 170px!important;
+  margin: 4px auto!important;
+  padding: 6px;
+  border-radius: 3px;
+  border: 1px solid #181818;
+  box-shadow: 0px 0px 1px #bbb;
+
+}
+.ll:hover{
+background-color: rgba(5, 109, 255, 0.1)
+
+}
+.tfoot2 {
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/tfoot311.png);
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/tfootu10.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0px auto!important;
+    width: 980px;
+    line-height: 42px;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.tfoot2 img {
+    margin: 0px 2px;
+    position: relative;
+    top: 1px;
+    right: 20px;
+} 
+.on, .off, span.user_area.online .off { display: none; }
+span.user_area.online .on {
+display: inline-block;
+font-size: 12px;
+min-width: 80px;
+text-align: center;
+}
+span.user_area .off {
+    display: inline-block;
+    min-width: 80px;
+    text-align: center;
+}
+span.name a {
+    display: inline-block;
+    width: 160px;
+    padding-left: 50px;
+    text-align: left;
+    margin-top: -1px;
+    margin-left: -2px
+}
+span.off {
+    color: #fff;
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/offlin10.png);
+    background-repeat: no-repeat;
+    background-position: center cennter;
+}
+span.on {
+color: #fff;
+background-image: url(https://i.servimg.com/u/f62/17/29/75/16/online10.png);
+background-repeat: no-repeat;
+background-position: center cennter;
+}
+.on, .off {
+    float: right;
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-family: sans-serif;
+}
+.row2{
+ border: none!important;
+  background: none!important;
+}
+.row2 .tfoot{
+  position: relative;
+  right: 1px;
+}
+.qreply{
+  margin: 0px auto!important;
+  background: none!important;
+}
+#qpost.row2, .box-content.profile, .formbuttonrow, .row1, .row2, .subtitle, .box-content div.agreement, .rules, div.newslink, .ipbform2 dl dd {
+  background-color: none!important;
+  background-image: url(https://i.servimg.com/u/f62/17/29/75/16/conten12.png)!important;
+  background-repeat: repeat-y!important;
+  border: none!important;
+  box-shadow: none!important;
+  padding: none!important;
+  margin: 0px auto!important;
+  background-position: center center;
+}
+.posting-options .posting-buttons li{
+  margin: 0px 10px;
+}
+.button {
+    background-color: transparent!important;
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/blank10.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none!important;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 29px!important;
+    margin: 4px;
+    min-width: 100px;
+    text-align: center;
+}
+.button:hover{
+ background-image: url(https://i.servimg.com/u/f62/17/29/75/16/previe10.png);
+}
+.box-content.profile{
+background-color: none!important;
+}
+.box-content{
+  border-bottom:none!important;
+  background: none!important;
+}
+a.forumtitle, a.topictitle{
+  font-family: gugi;
+  font-size: 14px;
+  text-decoration: none!important;
+  font-weight: 500!important;
+  color: #FFE1B9;
+}
+a.forumtitle:hover, a.topictitle:hover{
+color: #95c24b!important;   
+}
+.subforum a:hover{
+    color: #fff!important;
+}
+.subforum{
+  font-size: 0px!important;
+  display: inline-block;
+  position: relative;
+  left: 4px;
+  top: 4px;
+  width: 90%;
+}
+.subforum a{
+display: inline-block;
+  width: 160px!important;
+  float: left;
+  text-decoration: none!important;
+  font-size: 12px!important;
+ color: #cecece;
+  font-family: 'Kanit', sans-serif;
+  padding: 2px 0px;
+}
+.subforum a:hover{
+  color: #fff;
+}
+.subforum a.gensmall {
+    margin-left: 1px;
+    margin-top: -20px;
+}
+th, th.forum span{
+    color: #fff!important;
+    font-size: 12px!important;
+    font-weight: 600!important;
+}
+.maintitle h2{
+  color: #95c24b!important;
+    font-size: 14px!important;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: gugi!important;
+    position: relative;
+    top: 4px;
+ 
+}
+.subforum a{
+    color: #b9b9b9!important;
+    font-family: gugi;
+}
+.bottom_head {
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/tfoot310.png);
+    background-repeat: no-repeat;
+    height: 8px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    background-position: center bottom;
+}
+.top_head {
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/mainti13.png);
+    background-repeat: no-repeat;
+    height: 22px;
+    background-position: top center;
+}
+.continut, .box-content{
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/conten12.png)!important;
+    background-repeat: repeat-y!important;
+    background-position: center center;
+}
+.menu{
+margin-left: 43px;
+}
+.continut li, li.begin{
+  display: inline-block;
+  list-style: none;
+}
+.continut li a, input#blueandblack.button a{
+margin: 4px 2px;
+    background-image: url(https://i.servimg.com/u/f20/17/29/75/16/new10.png);
+    background-repeat: repeat-x;
+    display: inline-block;
+    line-height: 27px;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 2px;
+}
+.continut li a::before, input#blueandblack.button a::before{
+  content: url(https://i.servimg.com/u/f20/17/29/75/16/newbef10.png);
+  display: inline-block;
+  float: left;
+}
+.continut li a::after, #input#blueandblack.button a::after{
+    content: url(https://i.servimg.com/u/f20/17/29/75/16/newaft10.png);
+    display: inline-block;
+    float: right;
+}
+span.autor{
+  display: block;
+  font-weight: 600;
+}
+.optiuni a{
+    background-image: url(https://i.servimg.com/u/f20/17/29/75/16/new10.png);
+    background-repeat: repeat-x;
+    display: inline-block;
+    float: left;
+    line-height: 27px;
+    text-decoration: none;
+    color: #fff;
+}
+.optiuni a::before{
+    content: url(https://i.servimg.com/u/f20/17/29/75/16/newbef10.png);
+    display: inline-block;
+    float: left;
+}
+.optiuni a::after{
+      content: url(https://i.servimg.com/u/f20/17/29/75/16/newaft10.png);
+      display: inline-block;
+    float: right;
+} 
+.continut li a:hover{
+    background-image: url(https://i.servimg.com/u/f24/19/36/53/46/center10.png);
+    background-position: 0px -1px;
+}
+.continut li a:hover::before{
+    content: url(https://i.servimg.com/u/f24/19/36/53/46/bluele10.png);
+}
+.continut li a:hover::after{
+    content: url(https://i.servimg.com/u/f24/19/36/53/46/blueri10.png);
+}
+a.new-pm{
+color: #95c24b!important;
+}
+p.forum-desc .fa{
+    margin-left: -45px;
+    margin-right: 32px;
+    position: relative;
+    bottom: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ddd;
+    text-shadow: 0px 1px 1px black;
+}
+.continut2{
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/th10.png)!important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 5px;
+}
+.continut2 li{
+    display: inline-block;
+    list-style: none;
+}
+.continut2 li a{
+    display: inline-block;
+}
+.continut2 li a.first-link {
+    background-image: url(https://i.servimg.com/u/f24/19/36/53/46/center10.png);
+    background-position: 0px -1px;
+    backgorund-repeat: repeat-x;
+    line-height: 29px;
+    margin-left: 6px;
+    margin-right: 8px text-decoration: none!important;
+}
+.continut2 li a.first-link::before{
+    content: url(https://i.servimg.com/u/f24/19/36/53/46/bluele10.png);
+    display: inline-block;
+    float: left;
+}
+.continut2 li a.first-link::after{
+    content: url(https://i.servimg.com/u/f24/19/36/53/46/blueri10.png);
+    display: inline-block;
+    float: right;
+}
+a.nav{
+   line-height: 29px;
+   background-image: url(https://i.servimg.com/u/f20/17/29/75/16/new10.png);
+   background-repeat: repeat-x;
+   color: #bbb!important;
+   text-decoration: none!important;
+}
+a.nav:hover{
+  color: #fff!important;
+}
+a.nav::before{
+  content: url(https://i.servimg.com/u/f20/17/29/75/16/newbef10.png);
+  display: inline-block;
+  float: left;
+}
+a.nav::after{
+    content: url(https://i.servimg.com/u/f20/17/29/75/16/newaft10.png);
+    display: inline-block;
+    float: right;
+}
+a.nav:hover{
+    background-image: url(https://i.servimg.com/u/f24/19/36/53/46/center10.png);
+    background-position: 0px -1px;
+}
+a.nav:hover::before{
+    content: url(https://i.servimg.com/u/f24/19/36/53/46/bluele10.png);
+}
+a.nav:hover::after{
+    content: url(https://i.servimg.com/u/f24/19/36/53/46/blueri10.png);
+}
+.formsubtitle{
+  background: none!important;
+}
+#thead.h3 {
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/th10.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    line-height: 37px;
+    padding-left: 14px;
+    color: #95c24b!important;
+    font-weight: 500;
+    padding-top: 2px;
+}
+.ultimul_post span a{
+    font-family: gugi;
+    font-size: 12px;
+    font-weight: 500!important;
+    color: #FFE1B9;
+}
+/*Imagini in topicuri nu sunt afisate complet*/
+.post-entry img{
+width:-100%;
+}
+.post-entry img[src*='smiles']{
+width:auto !important;
+}
+table.att{
+    background: #282828;
+    width: 98%;
+    border: 2px solid #555;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black inset;
+}
+.codebox{
+   color: rgb(164,200,47);
+   border: 1px solid #000000;
+   border-bottom: none;
+}
+.codebox dd {
+    box-shadow: 0px 0px 10px transparent inset;
+    margin: 0px;
+    background: transparent;
+}
+.codebox dt {
+    background-color: transparent;
+    padding: 8px;
+    box-shadow: 0px 1px 1px #191919 inset;
+    color: #fff;
+}
+.member {
+    background-color: transparent;
+    border: 1px solid #979ba0;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 22%;
+}
+.member-list .popmenubutton .mini-avatar {
+    background: url(https://2img.net/i/fa/invision/pp-blank-thumb-38px.png) no-repeat;
+    background-color: #fff;
+    border: 1px solid #222;
+    display: block;
+    float: right;
+    height: 38px;
+    margin: 5px;
+    width: 38px;
+}
+.formsubtitle, table.ipbtable th.formsubtitle a { margin-left: 20px; color: #fff !important; }
+.statlinks a { color: #fff; }
+.toplinks a { color: #fff; }
+table.ipbtable.index-box th.forum { padding-left: 60px !important; }
+.ipbform fieldset legend {
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 .5em;
+}
+table.ipbtable th.formsubtitle {
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/th10.png)!important;
+    background-repeat: no-repeat;
+    line-height: 40px;
+    background-size: cover;
+}
+table.ipbtable th.formsubtitle, .formsubtitle {
+    background-color: none!important;
+}
+table.ipbtable th.formsubtitle {
+    background-color: #313131;
+    background-image: url(https://i.servimg.com/u/f72/12/12/58/19/cell10.gif);
+    background-repeat: repeat-x;
+    border-left: solid 1px #404040;
+    border-right: solid 1px #121212;
+    border-top: solid 1px #3C3C3C;
+    border-bottom: solid 1px #131313;
+}
+.formsubtitle, table.ipbtable th.formsubtitle {
+    background-color: #313131;
+    border: none;
+    text-align: left;
+}
+.qreply {
+    background-color: #313131;
+    border: 1px solid transparent;
+    margin: 1em auto;
+    padding: 6px;
+    width: 90%;
+}
+#msgw {
+    width: 99%;
+}
+.container_IE { margin-top: 50px; }
+#thead.h3 { margin-left: 10px; }
+.fa { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+a[href="/g2-administrators"] {
+    background: #FF0000 !important;
+    color: #fff!important;
+}
+a[href="/g3-beta-testers"] {
+    background: #FFAA00 !important;
+    color: #fff!important;
+}
+a[href="/g4-users"] {
+    background: #00B0F0 !important;
+    color: #fff!important;
+}
