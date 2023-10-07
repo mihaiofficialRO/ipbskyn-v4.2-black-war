@@ -1,0 +1,170 @@
+{JAVASCRIPT}
+<span class="numele_tau">{.USER_NAME}</span>
+<div class="top_head"></div>
+<div class="continut2" style="padding-left: 20px">
+<li class="begin"><a href="/" class="first-link"><span>Mihai Beta Zone - For All Forumotion Projects - Beta Zone</span></a>
+</li></div>
+<div class="bottom_head"></div>
+
+<!-- BEGIN message_admin_index -->
+        <div class="newslink">
+	<div class="top_head" style="height: 32px;"></div>
+	<!-- BEGIN message_admin_titre -->
+          <div class="h3"><div id="msgw">{message_admin_index.message_admin_titre.MES_TITRE}</div></div>
+	<!-- END message_admin_titre -->
+          
+	<!-- BEGIN message_admin_txt -->
+		<p>{message_admin_index.message_admin_txt.MES_TXT}</p>
+	<!-- END message_admin_txt -->
+	</div>
+<!-- END message_admin_index -->
+<div class="bottom_head" style="height: 30px;"></div>
+
+<!-- BEGIN switch_user_login_form_header -->
+<div class="borderwrap module">
+	<form action="{S_LOGIN_ACTION}" method="post" name="form_login">
+		<div class="box-content ipbform user_login_form center" style="padding:5px 0;">
+			<label><span class="genmed">{L_USERNAME}:</span> <input class="" type="text" size="10" name="username" /></label> &nbsp;
+			<label><span class="genmed">{L_PASSWORD}:</span> <input class="" type="password" size="10" name="password"/></label> &nbsp;
+			<label><span class="gensmall">{L_AUTO_LOGIN}</span> <input class="radio" type="checkbox" name="autologin" {AUTOLOGIN_CHECKED} /></label> &nbsp;
+			{S_HIDDEN_FIELDS}<input class="mainoption" type="submit" name="login" value="{L_LOGIN}" />
+            
+            <!-- BEGIN switch_social_login -->
+            <div class="mt10">
+                <div class="social_btn">
+                    <!-- BEGIN fb_connect -->
+                    <div class="fb-login-button"></div>
+                    <!-- END fb_connect -->
+                    <!-- BEGIN topicit_connect -->
+                    <div class="ti-connect"></div>
+                    <!-- END topicit_connect -->
+                </div>
+            </div>
+            <!-- END switch_social_login -->
+		</div>
+	</form>
+</div>
+ <br />
+<!-- END switch_user_login_form_header -->
+
+{CHATBOX_TOP}
+
+{BOARD_INDEX}
+
+<!-- BEGIN disable_viewonline -->
+
+<div id="fo_stat" class="borderwrap">
+    <div class="maintitle floated">
+        <h3>{L_STATISTICS}</h3>
+        <div class="contract" id="bs0" onclick="toggleCategory('s0');">
+            &nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+    <table cellpadding="0" cellspacing="0" class="ipbtable">
+        <thead>
+            <tr>
+                <th><a href="/viewonline" rel="nofollow">
+                        <div style="float: left;position: relative;left: 26px;">Who is online?</div>
+                    </a>
+                    <div class="linklist clearfix statlinks">
+                        <ul>
+                            <li><a href="{U_TODAY_ACTIVE}">{L_TODAY_ACTIVE}</a></li>
+                            <li><a href="{U_TODAY_POSTERS}">{L_TODAY_POSTERS}</a></li>
+                            <li class="last"><a href="{U_OVERALL_POSTERS}">{L_OVERALL_POSTERS}</a></li>
+                        </ul>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td></td>
+            </tr>
+        </tfoot>
+        <tbody id="s0">
+            <tr>
+                <td class="row2" style="padding-left: 22px;">
+                    <p>{LOGGED_IN_USER_LIST}</p>
+                    <p></p>
+                    <div class="24-hours">{L_ONLINE_USERS}{L_CONNECTED_MEMBERS}<br>{TOTAL_USERS_ONLINE}</div>
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="formsubtitle">
+                    <div style="position: relative;left: 50px;">Team</div>
+                </th>
+            </tr>
+            <tr>
+                <td class="row2" style="padding-left: 22px;">
+                    <div class="legend">{GROUP_LEGEND}</div>
+                </td>
+            </tr>
+            <tr style="display: none">
+                <th colspan="2" class="formsubtitle">
+                    <div style="position: relative;left: 50px;">Eveniments</div>
+                </th>
+            </tr>
+            <tr style="display: none">
+              <td class="row1" width="1%"><img src="https://2img.net/i/fa/empty.gif" alt="Calendar"/></td>
+                <td class="row2" style="padding-left: 22px;">There is no event scheduled in the calendar</td>
+            </tr>
+            <tr>
+                <th class="formsubtitle"><a href="/statistics" rel="nofollow">
+                        <div style="position: relative;left: 50px;">Statistics</div>
+                    </a></th>
+            </tr>
+            <tr>
+                <td class="row2" style="padding-left: 22px;">
+                    <p>{TOTAL_POSTS}</p>
+                    <p>{TOTAL_USERS}</p>
+                    <p>{NEWEST_USER}</p>
+                    <p>{RECORD_USERS}</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- END disable_viewonline -->
+      {CHATBOX_BOTTOM}
+    <!-- BEGIN switch_legend -->
+
+    <div class="tfoot2">
+        <div class="activeusers clearfix">
+            <ul class="ul-icons-home">
+                <li><img src="{FORUM_NEW_IMG}" alt="{L_NEW_POSTS}" />&nbsp;{L_NEW_POSTS}</li>
+                <li><img src="{FORUM_IMG}" alt="{L_NO_NEW_POSTS}" />&nbsp;{L_NO_NEW_POSTS}</li>
+                <li><img src="{FORUM_LOCKED_IMG}" alt="{L_FORUM_LOCKED}" />&nbsp;{L_FORUM_LOCKED}</li>
+            </ul>
+        </div>
+    </div>
+    <!-- END switch_legend -->
+
+
+
+
+<!-- BEGIN switch_user_login_form_footer -->
+<div class="borderwrap module">
+	<form action="{S_LOGIN_ACTION}" method="post" name="form_login">
+		<div class="box-content ipbform user_login_form center" style="padding:5px 0;">
+			<label><span class="genmed">{L_USERNAME}:</span> <input class="" type="text" size="10" name="username" /></label> &nbsp;
+			<label><span class="genmed">{L_PASSWORD}:</span> <input class="" type="password" size="10" name="password"/></label> &nbsp;
+			<label><span class="gensmall">{L_AUTO_LOGIN}</span> <input class="radio" type="checkbox" name="autologin" {AUTOLOGIN_CHECKED} /></label> &nbsp;
+			{S_HIDDEN_FIELDS}<input class="mainoption" type="submit" name="login" value="{L_LOGIN}" />
+            <!-- BEGIN switch_social_login -->
+            <div class="mt10">
+                <div class="social_btn">
+                    <!-- BEGIN fb_connect -->
+                    <div class="fb-login-button"></div>
+                    <!-- END fb_connect -->
+                    <!-- BEGIN topicit_connect -->
+                    <div class="ti-connect"></div>
+                    <!-- END topicit_connect -->
+                </div>
+            </div>
+            <!-- END switch_social_login -->
+		</div>
+	</form>
+</div>
+<!-- END switch_user_login_form_footer -->
+
+{AUTO_DST}
