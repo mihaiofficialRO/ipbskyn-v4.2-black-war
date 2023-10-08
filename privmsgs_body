@@ -87,7 +87,7 @@
 		</div>
 	</div>
 	</div>
-
+<div class="bottom_head"></div>
 	<div class="pagination">{PAGINATION} {PAGE_NUMBER}</div>
 	<div class="posting-options">
 		<ul class="posting-buttons clearfix">
