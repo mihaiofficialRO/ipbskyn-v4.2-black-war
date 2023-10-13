@@ -1,203 +1,101 @@
-{JAVASCRIPT}
- <div class="top_head"></div>
-<div class="continut" style="padding-left: 20px">
-	<li class="begin"><a href="{U_INDEX}"><span>{L_INDEX}</span></a></li>
-	{NAV_CAT_DESC}
-
-</div>
-<div class="bottom_head"></div>
-
-
-<!-- BEGIN message_admin_index -->
-	<div class="newslink">
-	<p class="date">{LAST_VISIT_DATE}</p>
-	<!-- BEGIN message_admin_titre -->
-		<div class="h3">{message_admin_index.message_admin_titre.MES_TITRE}</div>
-	<!-- END message_admin_titre -->
-
-	<!-- BEGIN message_admin_txt -->
-		<p>{message_admin_index.message_admin_txt.MES_TXT}</p>
-	<!-- END message_admin_txt -->
-	</div>
-<!-- END message_admin_index -->
-
-<!-- BEGIN switch_user_login_form_header -->
-<div class="borderwrap module">
-	<form action="{S_LOGIN_ACTION}" method="post" name="form_login">
-		<div class="box-content ipbform user_login_form center" style="padding:5px 0;">
-			<label><span class="genmed">{L_USERNAME}:</span> <input class="" type="text" size="10" name="username" /></label> &nbsp;
-			<label><span class="genmed">{L_PASSWORD}:</span> <input class="" type="password" size="10" name="password"/></label> &nbsp;
-			<label><span class="gensmall">{L_AUTO_LOGIN}</span> <input class="radio" type="checkbox" name="autologin" {AUTOLOGIN_CHECKED} /></label> &nbsp;
-			{S_HIDDEN_FIELDS}<input class="mainoption" type="submit" name="login" value="{L_LOGIN}" />
-            
-            <!-- BEGIN switch_social_login -->
-            <div class="mt10">
-                <div class="social_btn">
-                    <!-- BEGIN fb_connect -->
-                    <div class="fb-login-button"></div>
-                    <!-- END fb_connect -->
-                    <!-- BEGIN topicit_connect -->
-                    <div class="ti-connect"></div>
-                    <!-- END topicit_connect -->
-                </div>
-            </div>
-            <!-- END switch_social_login -->
+<!-- BEGIN catrow -->
+	<!-- BEGIN tablehead -->
+	<div class="borderwrap">
+		<div class="maintitle floated clearfix">
+			{catrow.tablehead.L_FORUM}
+			<div class="contract" id="b{catrow.tablehead.ID}" onclick="toggleCategory('{catrow.tablehead.ID}');">
+				&nbsp;&nbsp;&nbsp;
+			</div>
 		</div>
-	</form>
-</div>
- <br />
-<!-- END switch_user_login_form_header -->
 
-{CHATBOX_TOP}
-
-{BOARD_INDEX}
-
-<!-- BEGIN disable_viewonline -->
-<div id="fo_stat" class="borderwrap">
-	<div class="maintitle floated">
-		<h3>{L_STATISTICS}</h3>
-		<div class="contract" id="bs0" onclick="toggleCategory('s0');">
-			&nbsp;&nbsp;&nbsp;
-		</div>
-	</div>
-
-	<table cellpadding="0" cellspacing="0" class="ipbtable">
-		<thead>
-			<tr>
-				<th>
-                                  <a href="{U_VIEWONLINE}" rel="nofollow"><div  style="float: left;position: relative;left: 26px;">{L_WHO_IS_ONLINE}</div></a>
-					<div class="linklist clearfix statlinks">
-                                  
-							
-                                          <ul><li><a href="{U_TODAY_ACTIVE}">{L_TODAY_ACTIVE}</a></li>
-							<li><a href="{U_TODAY_POSTERS}">{L_TODAY_POSTERS}</a></li>
-							<li class="last"><a href="{U_OVERALL_POSTERS}">{L_OVERALL_POSTERS}</a></li>
-						</ul>
-					</div>
-				</th>
-			</tr>
-		</thead>
-		<tfoot>
-			<tr><td></td></tr>
-		</tfoot>
-		<tbody id="s0">
+		<table cellpadding="0" cellspacing="0" id="{catrow.tablehead.ID}" class="ipbtable index-box">
+			<thead>
+				<tr>
+                                  <th class="forum"><span>{L_FORUM}</span></th>
+					<th class="topics">{L_TOPICS}</th>
+					<th class="replies">{L_POSTS}</th>
+					<th class="last post-info">{L_LASTPOST}</th>
+				</tr>
+			</thead>
 			
-			<tr>
-				
-				<td class="row2" style="padding-left: 22px;">
-                                  <p>{LOGGED_IN_USER_LIST}</p>
-                          <p>{L_CONNECTED_MEMBERS}</p>
-                                
+			<tbody>
+	<!-- END tablehead -->
+
+	<!-- BEGIN forumrow -->
+				<tr>
+					<td class="row2 icon" style="padding-right: {catrow.forumrow.INC_LEVEL_RIGHT}; padding-left: 80px;">
+                              
+                                          <span class="status clearfix" style="margin-right: -{catrow.forumrow.INC_WIDTH_ICON}; margin-left: -{catrow.forumrow.INC_WIDTH_ICON};">
+							<img title="{catrow.forumrow.L_FORUM_FOLDER_ALT}" src="{catrow.forumrow.FORUM_FOLDER_IMG}" alt="{catrow.forumrow.L_FORUM_FOLDER_ALT}" class="icon" />
+						</span>
+						<div class="par forum-name">
+							<h{catrow.forumrow.LEVEL} class="hierarchy"><a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">{catrow.forumrow.FORUM_NAME}</a></h{catrow.forumrow.LEVEL}>
+							<p class="forum-desc">{catrow.forumrow.FORUM_DESC}</p>
+						</div>
 					
-				</td>
-			</tr>
-			
-			<tr>
-                          <th class="formsubtitle"><div style="position: relative;left: 50px;">Echipa</div></th>
-			</tr>
-			<tr>
-				
-				<td class="row2" style="padding-left: 22px;">
-					{GROUP_LEGEND}
-				</td>
-			</tr>
-		
-			<!-- BEGIN switch_calendar_5days -->
-			<tr style="display: none">
-                          <th colspan="2" class="formsubtitle"><div style="position: relative;left: 50px;">Evenimente</div></th>
-			</tr>
-			<tr style="display: none">
-				<td class="row1" width="1%"><img src="{L_CALENDAR_IMG}" alt="{L_CALENDAR}" /></td>
-				<td class="row2" style="padding-left: 22px;">
-					{CALENDAR_EVENTS_5DAYS}
-				</td>
-			</tr>
-			<!-- END switch_calendar_5days -->
-			<tr>
-				<th class="formsubtitle">
+						<div class="subforum">
+							{catrow.forumrow.L_LINKS}{catrow.forumrow.LINKS}
+							<strong>{forumrow.L_SUBFORUM_STR}</strong> {forumrow.SUBFORUMS}
+						</div>
+   
+					</td>
+                                  <td class="row1 centered"><span class="topics">{catrow.forumrow.TOPICS}</span></td>
+                                  <td class="row2 centered"><span class="posts">{catrow.forumrow.POSTS}</span></td>
+					<td class="row1" align="left" style="text-align: left!important">
+                        <!-- BEGIN ads -->
+                        <span class="AD_LastPA">
+                            <span class="lastpost-avatar"><img src="{catrow.forumrow.ads.IMG}" alt="{catrow.forumrow.ads.TITLE}" /></span>
+                            <span class="AD_LastInfos">
+                                <b><a href="{catrow.forumrow.ads.LINK}">{catrow.forumrow.ads.TITLE}</a></b><br />
+                                {catrow.forumrow.ads.DATE}<br />
+                                {catrow.forumrow.ads.LOCATION}
+                            </span>
+                        </span>
+                        <!-- END ads -->
+                        <!-- BEGIN avatar -->
+                        <span class="lastpost-avatar" style="margin-right: 6px">{catrow.forumrow.avatar.LAST_POST_AVATAR}</span>
+                        <!-- END avatar -->
 
-				<!-- BEGIN switch_statistics_link -->
-                                  <a href="{U_STATISTICS}" rel="nofollow"><div style="position: relative;left: 50px;">{L_STATISTICS}</div></a>
-				<!-- END switch_statistics_link -->
+						<span>
+						<!-- BEGIN switch_topic_title -->
+						<a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a><br />
+						<!-- END switch_topic_title -->
+						{catrow.forumrow.USER_LAST_POST}
+						</span>
+					</td>
+				</tr>
+	<!-- END forumrow -->
 
-				<!-- BEGIN switch_statistics_nolink -->
-				{L_STATISTICS}
-				<!-- END switch_statistics_nolink -->
-				</th>
-			</tr>
-			<tr>
-				
-				<td class="row2" style="padding-left: 22px;">
-					<p>{TOTAL_POSTS}</p>
-					<p>{TOTAL_USERS}</p>
-					<p>{RECORD_USERS}</p>
-                                    <p>{NEWEST_USER}</p>
-				</td>
-			</tr>
-			<!-- BEGIN switch_chatbox_activate -->
-			<tr>
-				<th  class="formsubtitle">{CHATBOX_NAME}</th>
-			</tr>
-			<tr>
-				
-				<td class="row2" style="padding-left: 22px;">
-					<p>{TOTAL_CHATTERS_ONLINE}</p>
-					<p>{CHATTERS_LIST}</p>
-					<!-- BEGIN switch_chatbox_popup -->
-					<div id="chatbox_popup"></div>
-					<script type="text/javascript">
-					insertChatBoxPopup('{disable_viewonline.switch_chatbox_activate.switch_chatbox_popup.U_FRAME_CHATBOX}', '{L_CLICK_TO_JOIN_CHAT}');
-					</script>
-					<!-- END switch_chatbox_popup -->
-				</td>
-			</tr>
-			<!-- END switch_chatbox_activate -->
-		</tbody>
-	</table>
-  <div class="tfoot2">
-  
-  <div class="activeusers clearfix">
-    <ul class="ul-icons-home">
-        <li><img src="{FORUM_NEW_IMG}" alt="{L_NEW_POSTS}" />&nbsp;{L_NEW_POSTS}</li>
-        <li><img src="{FORUM_IMG}" alt="{L_NO_NEW_POSTS}" />&nbsp;{L_NO_NEW_POSTS}</li>
-        <li><img src="{FORUM_LOCKED_IMG}" alt="{L_FORUM_LOCKED}" />&nbsp;{L_FORUM_LOCKED}</li>
-    </ul>
-</div>
-  </div>
-</div>
-
-<!-- END disable_viewonline -->
-<br />
-{CHATBOX_BOTTOM}
-
-<!-- BEGIN switch_legend -->
-
-<!-- END switch_legend -->
-
-
-<!-- BEGIN switch_user_login_form_footer -->
-<div class="borderwrap module">
-	<form action="{S_LOGIN_ACTION}" method="post" name="form_login">
-		<div class="box-content ipbform user_login_form center" style="padding:5px 0;">
-			<label><span class="genmed">{L_USERNAME}:</span> <input class="" type="text" size="10" name="username" /></label> &nbsp;
-			<label><span class="genmed">{L_PASSWORD}:</span> <input class="" type="password" size="10" name="password"/></label> &nbsp;
-			<label><span class="gensmall">{L_AUTO_LOGIN}</span> <input class="radio" type="checkbox" name="autologin" {AUTOLOGIN_CHECKED} /></label> &nbsp;
-			{S_HIDDEN_FIELDS}<input class="mainoption" type="submit" name="login" value="{L_LOGIN}" />
-            <!-- BEGIN switch_social_login -->
-            <div class="mt10">
-                <div class="social_btn">
-                    <!-- BEGIN fb_connect -->
-                    <div class="fb-login-button"></div>
-                    <!-- END fb_connect -->
-                    <!-- BEGIN topicit_connect -->
-                    <div class="ti-connect"></div>
-                    <!-- END topicit_connect -->
-                </div>
-            </div>
-            <!-- END switch_social_login -->
+	<!-- BEGIN tablefoot -->
+			</tbody>
+		</table>
+          <div class="tfoot">Design creat si realizat de fraNNNta-Design.com</div>
 		</div>
-	</form>
-</div>
-<!-- END switch_user_login_form_footer -->
+		<br />
+	<!-- END tablefoot -->
+<!-- END catrow -->
 
-{AUTO_DST}
+<!-- BEGIN switch_on_index -->
+<div class="toplinks linklist clearfix">
+	<ul>
+		<!-- BEGIN switch_delete_cookies -->
+		<li><a href="{switch_on_index.switch_delete_cookies.U_DELETE_COOKIES}" rel="nofollow">{switch_on_index.switch_delete_cookies.L_DELETE_COOKIES}</a></li>
+		<!-- END switch_delete_cookies -->
+		<!-- BEGIN switch_user_logged_in -->
+		<li class="last"><a href="{U_MARK_READ}">{L_MARK_FORUMS_READ}</a></li>
+		<!-- END switch_user_logged_in -->
+	</ul>
+</div>
+<!-- END switch_on_index -->
+          
+          <style>
+            .mini_avatar{
+            display: inline-block;
+            float: left;
+            }
+            
+            .mini_avatar img{
+            width: 24px;
+            height: 24px;
+            }
+            </style>
