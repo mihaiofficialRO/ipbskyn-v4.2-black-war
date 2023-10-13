@@ -54,60 +54,21 @@
 	<div class="maintitle">
 		<h3>{PAGE_TITLE}</h3>
 	</div>
-	<div id="memberlist" class="box-content member-list clearfix">
+	<div class="box-content member-list clearfix">
 
+          
 	<!-- BEGIN memberrow -->
-		<div class="member">
-			<div class="member-header clearfix">
-				
-				<div class="popmenubutton-new-out popmenubutton">
-					<a href="#" onclick="return togglePopUpMenu('pm{memberrow.ROW_NUMBER}');">
-						<span class="membername">{memberrow.USERNAME}</span>
-					</a>
+		<table class="table" width="100%" border="0" cellpading="0" cellspacing="0">
+  <tr>
 
-					<div class="mini-avatar">{memberrow.AVATAR_IMG}</div>
-				</div>
-
-				<div id="pm{memberrow.ROW_NUMBER}" class="popupmenu clearfix" style="display:none;">
-					<div class="avatar">{memberrow.AVATAR_IMG}</div>
-					<ul>
-						<li class="popupmenu-item">{memberrow.PROFILE_IMG}&nbsp;</li>
-						<!-- BEGIN switch_td_pm -->
-						<li class="popupmenu-item">{memberrow.PM_IMG}&nbsp;</li>
-						<!-- END switch_td_pm -->
-						<!-- BEGIN switch_user_email -->
-						<li class="popupmenu-item">{memberrow.EMAIL_IMG}&nbsp;</li>
-						<!-- END switch_user_email -->
-						<!-- BEGIN switch_user_website -->
-						<li class="popupmenu-item">{memberrow.WWW_IMG}&nbsp;</li>
-						<!-- END switch_user_website -->
-						<li class="popupmenu-item last">{memberrow.USER_POSTS_IMG}&nbsp;</li>
-					</ul>
-				</div>
-			</div>
-			<p>
-				<span class="label">{L_VISITED}</span>: {memberrow.LASTVISIT}
-				<br />
-				<!-- BEGIN switch_th_group -->
-				<span class="label">{L_GROUPS}</span>:
-				<!-- END switch_th_group -->
-				<!-- BEGIN switch_td_group -->
-				{memberrow.GROUPS}<br />
-				<!-- END switch_td_group -->
-				<!-- BEGIN switch_th_point -->
-				<span class="label">{L_POINT}</span>:
-				<!-- END switch_th_point -->
-				<!-- BEGIN switch_td_point -->
-                {memberrow.POINTS}<br />
-				<!-- END switch_td_point -->
-				<span class="label">{L_INTERESTS}</span>: {memberrow.INTERESTS}
-				<br />
-				<span class="label">{L_JOINED}</span>: {memberrow.JOINED}
-				<br />
-				<span class="label">{L_POSTS}</span>: {memberrow.POSTS}
-				<br />
-			</p>
-		</div>
+    <td align="left" valign="center" class="nume" width="10%"><div class="avatar">{memberrow.AVATAR_IMG}</div>{memberrow.USERNAME}</td>
+     <td align="left" valign="center" class="nume" width="20%"><span class="label">{L_JOINED}</span>: {memberrow.JOINED}</td>
+     <td align="left" valign="center" class="nume" width="20%">	<span class="label">{L_POSTS}</span>: {memberrow.POSTS}</td>
+         <td align="left" valign="center" class="nume" width="20%">{memberrow.PM_IMG}&nbsp;</td>
+    <td align="left" valign="center" class="nume" width="5%">{memberrow.WWW_IMG}&nbsp;</td>
+        <td align="left" valign="center" class="nume" width="20%">{memberrow.PROFILE_IMG}&nbsp;</td>
+  </tr>
+          </table>
 	<!-- END memberrow -->
 
 	<!-- BEGIN switch_no_user -->
@@ -115,7 +76,6 @@
 	<!-- END switch_no_user -->
 
 	</div>
-<div class="bottom_head"></div>
 </div>
 
 <!-- BEGIN switch_pagination -->
