@@ -1,24 +1,25 @@
 {JAVASCRIPT}
-<span class="numele_tau">{.USER_NAME}</span>
-<div class="top_head"></div>
-<div class="continut2" style="padding-left: 20px">
-<li class="begin"><a href="/" class="first-link"><span>Mihai Beta Zone - For All Forumotion Projects - Beta Zone</span></a>
-</li></div>
+ <div class="top_head"></div>
+<div class="continut" style="padding-left: 20px">
+	<li class="begin"><a href="{U_INDEX}"><span>{L_INDEX}</span></a></li>
+	{NAV_CAT_DESC}
+
+</div>
 <div class="bottom_head"></div>
 
+
 <!-- BEGIN message_admin_index -->
-        <div class="newslink">
-	<div class="top_head" style="height: 32px;"></div>
+	<div class="newslink">
+	<p class="date">{LAST_VISIT_DATE}</p>
 	<!-- BEGIN message_admin_titre -->
-          <div class="h3"><div id="msgw">{message_admin_index.message_admin_titre.MES_TITRE}</div></div>
+		<div class="h3">{message_admin_index.message_admin_titre.MES_TITRE}</div>
 	<!-- END message_admin_titre -->
-          
+
 	<!-- BEGIN message_admin_txt -->
 		<p>{message_admin_index.message_admin_txt.MES_TXT}</p>
 	<!-- END message_admin_txt -->
 	</div>
 <!-- END message_admin_index -->
-<div class="bottom_head" style="height: 30px;"></div>
 
 <!-- BEGIN switch_user_login_form_header -->
 <div class="borderwrap module">
@@ -52,94 +53,126 @@
 {BOARD_INDEX}
 
 <!-- BEGIN disable_viewonline -->
-
 <div id="fo_stat" class="borderwrap">
-    <div class="maintitle floated">
-        <h3>{L_STATISTICS}</h3>
-        <div class="contract" id="bs0" onclick="toggleCategory('s0');">
-            &nbsp;&nbsp;&nbsp;
-        </div>
-    </div>
-    <table cellpadding="0" cellspacing="0" class="ipbtable">
-        <thead>
-            <tr>
-                <th><a href="/viewonline" rel="nofollow">
-                        <div style="float: left;position: relative;left: 26px;">Who is online?</div>
-                    </a>
-                    <div class="linklist clearfix statlinks">
-                        <ul>
-                            <li><a href="{U_TODAY_ACTIVE}">{L_TODAY_ACTIVE}</a></li>
-                            <li><a href="{U_TODAY_POSTERS}">{L_TODAY_POSTERS}</a></li>
-                            <li class="last"><a href="{U_OVERALL_POSTERS}">{L_OVERALL_POSTERS}</a></li>
-                        </ul>
-                    </div>
-                </th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <td></td>
-            </tr>
-        </tfoot>
-        <tbody id="s0">
-            <tr>
-                <td class="row2" style="padding-left: 22px;">
-                    <p>{LOGGED_IN_USER_LIST}</p>
-                    <p></p>
-                    <div class="24-hours">{L_ONLINE_USERS}{L_CONNECTED_MEMBERS}<br>{TOTAL_USERS_ONLINE}</div>
-                    <p></p>
-                </td>
-            </tr>
-            <tr>
-                <th class="formsubtitle">
-                    <div style="position: relative;left: 50px;">Team</div>
-                </th>
-            </tr>
-            <tr>
-                <td class="row2" style="padding-left: 22px;">
-                    <div class="legend">{GROUP_LEGEND}</div>
-                </td>
-            </tr>
-            <tr style="display: none">
-                <th colspan="2" class="formsubtitle">
-                    <div style="position: relative;left: 50px;">Eveniments</div>
-                </th>
-            </tr>
-            <tr style="display: none">
-              <td class="row1" width="1%"><img src="https://2img.net/i/fa/empty.gif" alt="Calendar"/></td>
-                <td class="row2" style="padding-left: 22px;">There is no event scheduled in the calendar</td>
-            </tr>
-            <tr>
-                <th class="formsubtitle"><a href="/statistics" rel="nofollow">
-                        <div style="position: relative;left: 50px;">Statistics</div>
-                    </a></th>
-            </tr>
-            <tr>
-                <td class="row2" style="padding-left: 22px;">
-                    <p>{TOTAL_POSTS}</p>
-                    <p>{TOTAL_USERS}</p>
-                    <p>{NEWEST_USER}</p>
-                    <p>{RECORD_USERS}</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <!-- END disable_viewonline -->
-      {CHATBOX_BOTTOM}
-    <!-- BEGIN switch_legend -->
+	<div class="maintitle floated">
+		<h3>{L_STATISTICS}</h3>
+		<div class="contract" id="bs0" onclick="toggleCategory('s0');">
+			&nbsp;&nbsp;&nbsp;
+		</div>
+	</div>
 
-    <div class="tfoot2">
-        <div class="activeusers clearfix">
-            <ul class="ul-icons-home">
-                <li><img src="{FORUM_NEW_IMG}" alt="{L_NEW_POSTS}" />&nbsp;{L_NEW_POSTS}</li>
-                <li><img src="{FORUM_IMG}" alt="{L_NO_NEW_POSTS}" />&nbsp;{L_NO_NEW_POSTS}</li>
-                <li><img src="{FORUM_LOCKED_IMG}" alt="{L_FORUM_LOCKED}" />&nbsp;{L_FORUM_LOCKED}</li>
-            </ul>
-        </div>
-    </div>
-    <!-- END switch_legend -->
+	<table cellpadding="0" cellspacing="0" class="ipbtable">
+		<thead>
+			<tr>
+				<th>
+                                  <a href="{U_VIEWONLINE}" rel="nofollow"><div  style="float: left;position: relative;left: 26px;">{L_WHO_IS_ONLINE}</div></a>
+					<div class="linklist clearfix statlinks">
+                                  
+							
+                                          <ul><li><a href="{U_TODAY_ACTIVE}">{L_TODAY_ACTIVE}</a></li>
+							<li><a href="{U_TODAY_POSTERS}">{L_TODAY_POSTERS}</a></li>
+							<li class="last"><a href="{U_OVERALL_POSTERS}">{L_OVERALL_POSTERS}</a></li>
+						</ul>
+					</div>
+				</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr><td></td></tr>
+		</tfoot>
+		<tbody id="s0">
+			
+			<tr>
+				
+				<td class="row2" style="padding-left: 22px;">
+                                  <p>{LOGGED_IN_USER_LIST}</p>
+                          <p>{L_CONNECTED_MEMBERS}</p>
+                                
+					
+				</td>
+			</tr>
+			
+			<tr>
+                          <th class="formsubtitle"><div style="position: relative;left: 50px;">Echipa</div></th>
+			</tr>
+			<tr>
+				
+				<td class="row2" style="padding-left: 22px;">
+					{GROUP_LEGEND}
+				</td>
+			</tr>
+		
+			<!-- BEGIN switch_calendar_5days -->
+			<tr style="display: none">
+                          <th colspan="2" class="formsubtitle"><div style="position: relative;left: 50px;">Evenimente</div></th>
+			</tr>
+			<tr style="display: none">
+				<td class="row1" width="1%"><img src="{L_CALENDAR_IMG}" alt="{L_CALENDAR}" /></td>
+				<td class="row2" style="padding-left: 22px;">
+					{CALENDAR_EVENTS_5DAYS}
+				</td>
+			</tr>
+			<!-- END switch_calendar_5days -->
+			<tr>
+				<th class="formsubtitle">
 
+				<!-- BEGIN switch_statistics_link -->
+                                  <a href="{U_STATISTICS}" rel="nofollow"><div style="position: relative;left: 50px;">{L_STATISTICS}</div></a>
+				<!-- END switch_statistics_link -->
 
+				<!-- BEGIN switch_statistics_nolink -->
+				{L_STATISTICS}
+				<!-- END switch_statistics_nolink -->
+				</th>
+			</tr>
+			<tr>
+				
+				<td class="row2" style="padding-left: 22px;">
+					<p>{TOTAL_POSTS}</p>
+					<p>{TOTAL_USERS}</p>
+					<p>{RECORD_USERS}</p>
+                                    <p>{NEWEST_USER}</p>
+				</td>
+			</tr>
+			<!-- BEGIN switch_chatbox_activate -->
+			<tr>
+				<th  class="formsubtitle">{CHATBOX_NAME}</th>
+			</tr>
+			<tr>
+				
+				<td class="row2" style="padding-left: 22px;">
+					<p>{TOTAL_CHATTERS_ONLINE}</p>
+					<p>{CHATTERS_LIST}</p>
+					<!-- BEGIN switch_chatbox_popup -->
+					<div id="chatbox_popup"></div>
+					<script type="text/javascript">
+					insertChatBoxPopup('{disable_viewonline.switch_chatbox_activate.switch_chatbox_popup.U_FRAME_CHATBOX}', '{L_CLICK_TO_JOIN_CHAT}');
+					</script>
+					<!-- END switch_chatbox_popup -->
+				</td>
+			</tr>
+			<!-- END switch_chatbox_activate -->
+		</tbody>
+	</table>
+  <div class="tfoot2">
+  
+  <div class="activeusers clearfix">
+    <ul class="ul-icons-home">
+        <li><img src="{FORUM_NEW_IMG}" alt="{L_NEW_POSTS}" />&nbsp;{L_NEW_POSTS}</li>
+        <li><img src="{FORUM_IMG}" alt="{L_NO_NEW_POSTS}" />&nbsp;{L_NO_NEW_POSTS}</li>
+        <li><img src="{FORUM_LOCKED_IMG}" alt="{L_FORUM_LOCKED}" />&nbsp;{L_FORUM_LOCKED}</li>
+    </ul>
+</div>
+  </div>
+</div>
+
+<!-- END disable_viewonline -->
+<br />
+{CHATBOX_BOTTOM}
+
+<!-- BEGIN switch_legend -->
+
+<!-- END switch_legend -->
 
 
 <!-- BEGIN switch_user_login_form_footer -->
