@@ -37,15 +37,14 @@ showHiddenMessage = function(id)
 
 //]]>
 </script>
+ <div class="top_head"></div>
+<div class="continut" style="padding-left: 20px">
+	<li class="begin"><a href="{U_INDEX}"><span>{L_INDEX}</span></a></li>
+	{NAV_CAT_DESC}
 
-<div class="top_head"></div>
-<div class="continut2" style="padding-left: 20px">
-  <li class="begin">
-    <a href="/" class="first-link"><span>Mihai Beta Zone</span></a>
-  </li>
-  {NAV_CAT_DESC}
 </div>
 <div class="bottom_head"></div>
+
 
 <!-- BEGIN topicpagination -->
 <div class="pagination topic-options">
@@ -87,9 +86,7 @@ showHiddenMessage = function(id)
 <div class="clearfix empty-clear"></div>
 
 <div class="borderwrap">
-	<div class="maintitle" style="position: relative;right: 0px;top: 0px;font-size: 12px!important;font-family: tahoma;font-weight: 500!important;text-align: left!important;line-height: 10px!important;">
-        <span style="position: relative;right: 0px;top: 10px;">Chat topic</span>
-        </div>
+
 	{POLL_DISPLAY}
 
 	<!-- BEGIN postrow -->
@@ -100,64 +97,136 @@ showHiddenMessage = function(id)
 	
 	<!-- BEGIN first_post_br -->
 </div>
-<hr id="first-post-br" />
+
 <div class="borderwrap">
 	<!-- END first_post_br -->
 	
 	<!-- BEGIN displayed -->
-	 <table cellpadding="0" cellspacing="0" id="" class="ipbtable index-box" style="padding-top: 10px;">
-        <thead style="line-height: 30px!important;">
-            <tr>
-                <td width="210px" align="center" valign="center" height="28px" style="min-height: 28px;height: 28px"><span class="name"> <span style="color:#8C8C8C">
-                    <strong>{postrow.displayed.POSTER_NAME}</strong>
-                    </span> 
-                    </span>
-                    </td>
-                <td class="topics" align="right" valign="center" height="28px" style="min-height: 28px;height: 28px">
-                     <span class="user_area"><span style="color:#536482;" class="status_row_"></span> 
-                     <span class="on">Online</span>
-                     <span class="off">Offline</span>
-                     </span>
-                     </td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="avatar_info" align="left" valign="top" width="210px" style="padding-left: 20px">
-                  <div class="begin_avatar_top"> <span class="membru">Rank:<b> Membru</b></span><br/> </div>
-                    <div class="content_avatar">
-                        <center>	{postrow.displayed.POSTER_AVATAR}</center>
-                        <div class="detalii">
-                            <dd>
-                                	<!-- BEGIN profile_field -->
-                              <div class="ll">{postrow.displayed.profile_field.LABEL}{postrow.displayed.profile_field.CONTENT}{postrow.displayed.profile_field.SEPARATOR}</div>
+  <div class="maintitle" style="position: relative;
+  right: 0px;
+  top: 0px;font-size: 12px!important;font-family: tahoma;font-weight: 500!important;text-align: left!important;line-height: 10px!important;">
+	<span style="position: relative;
+  right: 0px;
+  top: 10px;">
+{postrow.displayed.POST_SUBJECT}
+  </span>
+	</div>
+		<table cellpadding="0" cellspacing="0" id="{catrow.tablehead.ID}" class="ipbtable index-box" style="padding-top: 10px;">
+
+                  <thead style="line-height: 30px!important;">
+				<tr>
+                                  <td width="210px" align="center" valign="center" height="28px" style="min-height: 28px;height: 28px"><span class="name"> {postrow.displayed.POSTER_NAME}  </span></td>
+					<td class="topics" align="right" valign="center" height="28px" style="min-height: 28px;height: 28px">          <span class="user_area{postrow.displayed.ONLINE_IMG_NEW}"><span style="color:#536482;" class="status_row_{postrow.displayed.ONLINE_IMG_NEW}"></span> <span class="on">Online</span><span class="off">Offline</span></span>
+                            </td>
+				
+				</tr>
+			</thead>
+    <tr>
+      <td class="avatar_info" align="left" valign="top" width="210px" style="padding-left: 20px">
+        <div class="begin_avatar_top"> {postrow.displayed.POSTER_RANK_NEW} </div>	
+        <div class="content_avatar"> 
+
+          <center>{postrow.displayed.POSTER_AVATAR}</center>
+			<div class="detalii">		
+
+     <dd>
+							<!-- BEGIN profile_field -->
+       <div class="ll">{postrow.displayed.profile_field.LABEL}{postrow.displayed.profile_field.CONTENT}{postrow.displayed.profile_field.SEPARATOR}</div>
 							<!-- END profile_field -->
 							{postrow.displayed.POSTER_RPG}
-                            </dd>
-                        </div>
-                    </div>
-                    <div class="bottom_avatar"></div>
-                </td>
-                <td class="postbody_content" align="left" valign="top" style="vertical-align: top!important;">
-                    <div class="post-entry">
-                        <div>{postrow.displayed.MESSAGE}</div>
-                        <div class="clear"></div>
-                    </div>
-                  <br/><br/>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-  <div class="tfoot2">
-			<ul class="posting-icons">
-				{postrow.displayed.THANK_IMG}
+						</dd>
+          </div>
+        </div>
+          
+        <div class="bottom_avatar"></div>
+      </td>
+
+      <td class="postbody_content" align="left" valign="top" style="vertical-align: top!important;">
+        
+ <div class="post-entry">
+				<div>{postrow.displayed.MESSAGE}</div>
+
+				<!-- BEGIN switch_attachments -->
+				<dl class="attachbox">
+					<dt>{postrow.displayed.switch_attachments.L_ATTACHMENTS}</dt>
+					<dd>
+						<!-- BEGIN switch_post_attachments -->
+						<dl class="file">
+							<dt>
+								<img src="{postrow.displayed.switch_attachments.switch_post_attachments.U_IMG}" alt="" />
+
+								<!-- BEGIN switch_dl_att -->
+								<a class="postlink" href="{postrow.displayed.switch_attachments.switch_post_attachments.switch_dl_att.U_ATTACHMENT}">{postrow.displayed.switch_attachments.switch_post_attachments.switch_dl_att.ATTACHMENT}</a> {postrow.displayed.switch_attachments.switch_post_attachments.switch_dl_att.ATTACHMENT_DEL}
+								<!-- END switch_dl_att -->
+
+								<!-- BEGIN switch_no_dl_att -->
+								{postrow.displayed.switch_attachments.switch_post_attachments.switch_no_dl_att.ATTACHMENT} {postrow.displayed.switch_attachments.switch_post_attachments.switch_no_dl_att.ATTACHMENT_DEL}
+								<!-- END switch_no_dl_att -->
+							</dt>
+
+							<!-- BEGIN switch_no_comment -->
+							<dd>
+								<em>{postrow.displayed.switch_attachments.switch_post_attachments.switch_no_comment.ATTACHMENT_COMMENT}</em>
+							</dd>
+							<!-- END switch_no_comment -->
+
+							<!-- BEGIN switch_no_dl_att -->
+							<dd>
+								<em><strong>{postrow.displayed.switch_attachments.switch_post_attachments.switch_no_dl_att.TEXT_NO_DL}</strong></em>
+							</dd>
+							<!-- END switch_no_dl_att -->
+
+							<dd>({postrow.displayed.switch_attachments.switch_post_attachments.FILE_SIZE}) {postrow.displayed.switch_attachments.switch_post_attachments.NB_DL}</dd>
+						</dl>
+						<!-- END switch_post_attachments -->
+					</dd>
+				</dl>
+				<!-- END switch_attachments -->
+				<div class="clear"></div>
+				{postrow.displayed.EDITED_MESSAGE}
+			</div>
+
+
+			<!-- BEGIN switch_signature -->
+			<br />
+			<div id="sig{postrow.displayed.U_POST_ID}" class="signature_div">{postrow.displayed.SIGNATURE_NEW}</div>
+			<!-- END switch_signature -->
+        		<br />
+        		<br />
+                        <script type="text/javascript">
+                          //<![CDATA[
+                          	var user = $('{postrow.displayed.POSTER_NAME}').html();
+                                jQuery.get('https://147.ip-51-255-166.eu/ssyt_cdn/frannnta-design/like/getdata.php?post_id={postrow.displayed.U_POST_ID}&user='+ encodeURIComponent(_userdata.username) +'').complete(function(data) {
+                                  $('#like_topic_{postrow.displayed.U_POST_ID}').html(data.responseText);
+                                  $('.like_topic', $('#like_topic_{postrow.displayed.U_POST_ID}')).attr({
+                                          'data-id': '{postrow.displayed.U_POST_ID}',
+                                          'data-author': $('{postrow.displayed.POSTER_NAME}').text()
+                                  });
+
+                                  if(_userdata.username === $('{postrow.displayed.POSTER_NAME}').text()) {
+                                          $('.like_topic', $('#like_topic_{postrow.displayed.U_POST_ID}')).remove();
+                                  }
+                                  
+                                  if(_userdata.session_logged_in == 0) {
+                          		$('.like_topic', $('#like_topic_{postrow.displayed.U_POST_ID}')).remove();
+                                  }
+                                });
+                          //]]>
+                        </script>
+                        
+                        <div id="like_topic_{postrow.displayed.U_POST_ID}"></div>
+      </td>
+    </tr>
+   
+    
+  </table>
+                  <div class="tfoot2">
+                    {postrow.displayed.THANK_IMG}
 				{postrow.displayed.MULTIQUOTE_IMG}
 				{postrow.displayed.QUOTE_IMG}
 				{postrow.displayed.EDIT_IMG}
-				{postrow.displayed.DELETE_IMG}
-			</ul>
-		</div>
-	</div> <!-- closing tag post -->
+				{postrow.displayed.DELETE_IMG}</div>	
+	<!-- closing tag post -->
 	<!-- END displayed -->
 	<!-- END postrow -->
 	<div class="topic-footer clearfix">
@@ -243,7 +312,7 @@ showHiddenMessage = function(id)
 		</div>
 		<div>
 			<!-- BEGIN link -->
-			&raquo;&nbsp;<a href="{promot_trafic.link.U_HREF}" target="_blank" title="{promot_trafic.link.TITLE}" rel="nofollow">{promot_trafic.link.TITLE}</a><br />
+			&raquo;&nbsp;<a href="{promot_trafic.link.U_HREF}" title="{promot_trafic.link.TITLE}" rel="nofollow">{promot_trafic.link.TITLE}</a><br />
 			<!-- END link -->
 		</div>
 	</div>
@@ -274,8 +343,9 @@ showHiddenMessage = function(id)
 <br />
 <a name="quickreply"></a>
 {QUICK_REPLY_FORM}
+<div class="tfoot" style="position: relative;right:2px;">Design creat si realizat de fraNNNta-Design.com </div>
 <!-- END switch_user_logged_in -->
-<div class="bottom_head" style="height: 30px;"></div>
+
 <!-- BEGIN switch_image_resize -->
 <script type="text/javascript">
 //<![CDATA[
